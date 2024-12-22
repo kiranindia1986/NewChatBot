@@ -5,9 +5,8 @@ import db from "../firebaseConfig";
 import { cosineSimilarity } from "../utils/cosineSimilarity"; // Helper function for similarity
 
 
-
 const llm = new OpenAI({
-    openAIApiKey: "Bearer sk- proj - Ipwhh6y5svI6g6jpGAD2qGLu1K2zRFP3S0QFTT3zP_qWO4Udv - yg8ccNsILjdZ3e6Pn6dTD6raT3BlbkFJr8BMKiGAhpDYro37bpQLGCofKhKhOj1JOAYynLXiRWUcKbeR5kIbCQZvS474YQThSyAXnoFgsA",
+    openAIApiKey: process.env.REACT_APP_OPENAI_API_KEY,
     temperature: 0,
 });
 
